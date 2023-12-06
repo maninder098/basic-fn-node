@@ -115,41 +115,50 @@ function toUpper() {
 // }
 
 
-function callPerRate(calls){
+function callPerRate(calls) {
 
     let call = calls;
-    let rate = 0,cost= 0
-    
-    if(call>0 && call<100){
+    let rate = 0, cost = 0
+
+    if (call > 0 && call < 100) {
         console.log("it is free of cost");
-    }else if(call>=100 && call<200){
-        rate =50  // 50 paise per call
-        cost = (call*rate)/100
-        console.log("The total cost is :",cost);
-    }else if(call>=200 && call < 300){
+    } else if (call >= 100 && call < 200) {
+        rate = 50  // 50 paise per call
+        cost = (call * rate) / 100
+        console.log("The total cost is :", cost);
+    } else if (call >= 200 && call < 300) {
         rate = 70
-        cost = (call*rate)/100
-        console.log("The total cost is :",cost);
-}else{
-    rate = 90
-    cost = (call*rate)/100
-    console.log("The total cost is :",cost);
-}
+        cost = (call * rate) / 100
+        console.log("The total cost is :", cost);
+    } else {
+        rate = 90
+        cost = (call * rate) / 100
+        console.log("The total cost is :", cost);
+    }
 }
 
 // callPerRate()
 
-// EN JEZWGG93118
+// EN  JEZWGG93118
 // CN MD2A17CZ9GWG19172
 
 
+function nameModify(name){
 
-let str = 'maninder pal singh'
-let arr = str.split(" ")
-console.log(("array is",arr));
-arr.map((ele)=>{
-    let str2 = ''
-    console.log(ele[0]+"."+ele[0]);
-    ele[0]
-})
+    let str = name
+    let arr = str.split(" ")
+    let str2 = '';
+            
+    for (let i = 0; i < arr.length; i++) {
+        if (i == 2) {
+            break
+        }
+        str2 += arr[i].charAt(0) + '.'
+    }
+    str2 += arr[2]
+    
+    console.log(str2.toUpperCase());
+    
+}
 
+// nameModify("shubam kumar jha")    
