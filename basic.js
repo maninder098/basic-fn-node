@@ -144,6 +144,12 @@ function callPerRate(calls){
 
 
 
-
-
+let str = 'maninder pal singh'
+let arr = str.split(" ")
+console.log(("array is",arr));
+arr.map((ele)=>{
+    let str2 = ''
+    console.log(ele[0]+"."+ele[0]);
+    ele[0]
+})
 
