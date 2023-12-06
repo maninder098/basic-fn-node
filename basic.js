@@ -148,7 +148,7 @@ function nameModify(name){
     let str = name
     let arr = str.split(" ")
     let str2 = '';
-    
+            
     for (let i = 0; i < arr.length; i++) {
         if (i == 2) {
             break
